@@ -2,6 +2,7 @@ import React from "react";
 import AvatarLinks from "./AvatarLinks";
 import { Link } from "gatsby";
 import siteConfig from "../../../data/SiteConfig";
+import logo from "../../../data/logo.png";
 
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
@@ -12,7 +13,7 @@ const BigAvatar = props => {
   return (
     <>
       <div sx={{ textAlign: `center` }}>
-        <img src={avatar.photo} sx={{ width: 100, borderRadius: 999 }} />
+      <img src= { logo }/>
         <Styled.h1 sx={{ color: `text` }}>
           Ola, I'm{" "}
           <Styled
