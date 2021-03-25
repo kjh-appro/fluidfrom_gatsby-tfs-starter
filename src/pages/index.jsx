@@ -7,7 +7,6 @@ import SEO from "../components/SEO/SEO";
 import BigAvatar from "../components/Avatar/BigAvatar";
 import config from "../../data/SiteConfig";
 import AllCategories from "../components/AllCategories";
-import Search from "../components/search";
 
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
@@ -23,9 +22,6 @@ class Index extends React.Component {
         <SEO />
         <section>
           <BigAvatar />
-        </section>
-        <section>
-        <Search data={ searchSection } posts={ allPosts } engine={ options }/>
         </section>
         <section sx={{ mt: `60px` }}>
           <Styled.h1>I write about</Styled.h1>
