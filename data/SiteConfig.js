@@ -1,3 +1,5 @@
+import Search from "../components/search";
+
 const config = {
   siteTitle: "gatsby tfs starter", // Site title.
   siteTitleShort: "tfs starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
@@ -48,6 +50,12 @@ const config = {
     {
       name: "Articles",
       url: "/blog"
+    }
+    {
+      name: "Search",
+      url:         
+      <Search data={ searchSection } posts={ allPosts } engine={ options }/>
+
     }
   ],
   copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
