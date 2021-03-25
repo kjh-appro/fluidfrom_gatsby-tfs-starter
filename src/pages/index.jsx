@@ -20,10 +20,12 @@ class Index extends React.Component {
     return (
       <Layout>
         <Helmet title={config.siteTitle} />
-        <Search data={ searchSection } posts={ allPosts } engine={ options }/>
         <SEO />
         <section>
           <BigAvatar />
+        </section>
+        <section>
+        <Search data={ searchSection } posts={ allPosts } engine={ options }/>
         </section>
         <section sx={{ mt: `60px` }}>
           <Styled.h1>I write about</Styled.h1>
