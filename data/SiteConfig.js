@@ -48,6 +48,10 @@ const config = {
     {
       name: "Articles",
       url: "/blog"
+    },
+    {
+      name: "Search"
+
     }
   ],
   copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
