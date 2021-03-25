@@ -7,6 +7,7 @@ import SEO from "../components/SEO/SEO";
 import BigAvatar from "../components/Avatar/BigAvatar";
 import config from "../../data/SiteConfig";
 import AllCategories from "../components/AllCategories";
+import Search from "../components/search";
 
 /** @jsx jsx */
 import { Styled, jsx } from "theme-ui";
@@ -19,6 +20,7 @@ class Index extends React.Component {
     return (
       <Layout>
         <Helmet title={config.siteTitle} />
+        <Search data={ searchSection } posts={ allPosts } engine={ options }/>
         <SEO />
         <section>
           <BigAvatar />
